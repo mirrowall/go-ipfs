@@ -18,9 +18,9 @@ else
 	ln -s $(notdir $^) $@
 endif
 
-bin/gx-v%:
-	@echo "installing gx $(@:bin/gx-%=%)"
-	bin/dist_get $(dist_root_bin) gx $@ $(@:bin/gx-%=%)
+#bin/gx-v%:
+#	@echo "installing gx $(@:bin/gx-%=%)"
+#	bin/dist_get $(dist_root_bin) gx $@ $(@:bin/gx-%=%)
 
 bin/gx-go-v%:
 	@echo "installing gx-go $(@:bin/gx-go-%=%)"

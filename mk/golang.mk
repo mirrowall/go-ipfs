@@ -60,10 +60,10 @@ test_go_megacheck:
 
 test_go: $(TEST_GO)
 
-check_go_version:
-	bin/check_go_version $(GO_MIN_VERSION)
-.PHONY: check_go_version
-DEPS_GO += check_go_version
+#check_go_version:
+#	bin/check_go_version $(GO_MIN_VERSION)
+#.PHONY: check_go_version
+#DEPS_GO += check_go_version
 
 check_go_path:
 	GOPATH="$(GOPATH)" bin/check_go_path github.com/ipfs/go-ipfs
